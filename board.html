@@ -11,23 +11,28 @@
 </head>
 <body>
     <main>
-        <div class="sidebar">
-            <div class="titulo">
-                
+        <div class="sidebar hidden" id="sidebar">
+            <div class="titulo">             
                 <h2>Elementos</h2>
             </div>
 
             <div class="elementos">
                 <ul>
-                    <li>Notas</li>
-                    <li>Linhas</li>
+                    <li>
+                        <button onclick="createNote()">Notas</button>
+                    </li>
+                    <li>
+                        <button>Linhas</button>
+                    </li>
                 </ul>
             </div>
         </div>
-        
-        <div class="board">
-
+        <button id="closeSidebar" onclick="showSidebar()">>>></button>
+        <div id="board">
+            
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
